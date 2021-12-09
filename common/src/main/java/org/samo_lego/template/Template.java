@@ -19,7 +19,7 @@ public class Template {
      * Gets the platformer instance.
      * @return platformer instance.
      */
-    public static Platform getPlatformer() {
+    public static Platform getPlatform() {
         return PLATFORM_INSTANCE;
     }
 }

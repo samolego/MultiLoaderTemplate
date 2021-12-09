@@ -5,6 +5,8 @@ allprojects {
 
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
+
+    archivesBaseName = rootProject.mod_name
     version = rootProject.mod_version
     group = rootProject.maven_group
 

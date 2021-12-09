@@ -2,14 +2,14 @@ package org.samo_lego.template.platform_specific;
 
 import net.minecraft.server.level.ServerPlayer;
 
-import java.io.File;
+import java.nio.file.Path;
 
 public abstract class Platform {
     /**
-     * Gets config directory.
-     * @return config directory file.
+     * Gets config directory path.
+     * @return config directory path.
      */
-    public abstract File getConfigDirectory();
+    public abstract Path getConfigDirectory();
 
     /**
      * Checks whether player has provided permission.

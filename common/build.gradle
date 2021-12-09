@@ -6,11 +6,5 @@ plugins {
 
 minecraft {
     version(rootProject.minecraft_version) // or: latestRelease() or latestSnapshot()
-
     platform(MinecraftPlatform.JOINED)
-
-    runs {
-        server()
-        client()
-    }
 }

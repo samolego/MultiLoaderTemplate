@@ -1,7 +1,6 @@
 pluginManagement {
     repositories {
         maven { url "https://maven.fabricmc.net/" }
-        maven { url "https://maven.architectury.dev/" }
         maven { url "https://files.minecraftforge.net/maven/" }
         maven {
             url = "https://repo.spongepowered.org/repository/maven-public/"
@@ -9,6 +8,7 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 plugins {
     id("org.spongepowered.gradle.vanilla") version "0.2.1-SNAPSHOT"
     id 'fabric-loom' version '0.10-SNAPSHOT'
