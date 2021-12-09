@@ -1,0 +1,16 @@
+import org.spongepowered.gradle.vanilla.repository.MinecraftPlatform
+
+plugins {
+    id("org.spongepowered.gradle.vanilla")
+}
+
+minecraft {
+    version(rootProject.minecraft_version) // or: latestRelease() or latestSnapshot()
+
+    platform(MinecraftPlatform.JOINED)
+
+    runs {
+        server()
+        client()
+    }
+}
