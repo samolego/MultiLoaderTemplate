@@ -11,7 +11,7 @@ allprojects {
     group = rootProject.maven_group
 
     repositories {
-
+        mavenCentral()
     }
 }
 

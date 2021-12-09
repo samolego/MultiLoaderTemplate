@@ -18,7 +18,10 @@
       "org.samo_lego.template.fabric.TemplateFabric"
     ]
   },
-  "mixins": [ ],
+  "mixins": [
+    "template.mixins.json",
+    "template.fabric.mixins.json"
+  ],
 
   "depends": {
     "fabricloader": ">=0.7.4",

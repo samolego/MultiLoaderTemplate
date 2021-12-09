@@ -1,9 +1,13 @@
 package org.samo_lego.template;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.samo_lego.template.platform_specific.Platform;
 
 public class Template {
 
+    private static final String MOD_ID = "template";
+    public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
     private static Platform PLATFORM_INSTANCE;
 
     /**
@@ -12,7 +16,7 @@ public class Template {
      */
     public static void init(Platform platform) {
         PLATFORM_INSTANCE = platform;
-        System.out.println("Hello World!");
+        LOGGER.info("Hello World!");
     }
 
     /**
