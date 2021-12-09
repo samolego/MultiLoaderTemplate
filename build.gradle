@@ -3,8 +3,8 @@ allprojects {
     apply plugin: "maven-publish"
     //apply plugin: "com.github.johnrengelman.shadow"
 
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    //sourceCompatibility = JavaVersion.VERSION_17  // Incompatible with below option java.toolchain
+    //targetCompatibility = JavaVersion.VERSION_17
 
     archivesBaseName = rootProject.mod_name
     version = rootProject.mod_version
@@ -13,5 +13,8 @@ allprojects {
     repositories {
         mavenCentral()
     }
+
+    // Forge needs this
+    java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
 

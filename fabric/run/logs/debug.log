@@ -126,7 +126,7 @@
 [21:42:33] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer net.fabricmc.fabric.impl.event.lifecycle.ClientLifecycleEventsImpl for mod fabric-lifecycle-events-v1 (key client)
 [21:42:33] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer net.fabricmc.fabric.impl.event.lifecycle.LifecycleEventsImpl for mod fabric-lifecycle-events-v1 (key main)
 [21:42:33] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer net.fabricmc.fabric.impl.mininglevel.FabricMiningLevelInit for mod fabric-mining-level-api-v1 (key main)
-[21:42:33] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer org.samo_lego.template.fabric.TemplateFabric for mod template (key main)
+[21:42:33] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer org.samo_lego.template.TemplateFabric for mod template (key main)
 [21:42:33] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer net.fabricmc.fabric.impl.screenhandler.client.ClientNetworking for mod fabric-screen-handler-api-v1 (key client)
 [21:42:33] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer net.fabricmc.fabric.impl.networking.OldClientNetworkingHooks for mod fabric-networking-v0 (key client)
 [21:42:33] [main/DEBUG] (FabricLoader/Entrypoint) Registering new-style initializer net.fabricmc.fabric.impl.networking.OldNetworkingHooks for mod fabric-networking-v0 (key main)
@@ -1212,3 +1212,58 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 [21:43:01] [Render thread/INFO] (template) This line is printed by an example mod mixin in COMMON package!
 [21:43:01] [Render thread/INFO] (net.minecraft.server.LoggedPrintStream) [STDOUT]: /media/samo/DataDisk/Documents/GitHub/MultiLoaderTemplate/fabric/run/config
 [21:43:01] [Render thread/INFO] (template) This line is printed by an example mod mixin in fabric package!
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) Mixing client.CreateWorldScreenMixin from fabric-resource-loader-v0.mixins.json into net.minecraft.client.gui.screens.worldselection.CreateWorldScreen
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-resource-loader-v0.mixins.json:client.CreateWorldScreenMixin: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-resource-loader-v0.mixins.json:client.CreateWorldScreenMixin->@Inject::onScanPacks(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V from mod fabric-resource-loader-v0 doesn't use it's CallbackInfoReturnable
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-resource-loader-v0.mixins.json:client.CreateWorldScreenMixin->@Inject::onScanPacks(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V from mod fabric-resource-loader-v0 has 0 override(s) in child classes
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-resource-loader-v0.mixins.json:client.CreateWorldScreenMixin->@Inject::onScanPacks(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V from mod fabric-resource-loader-v0 won't be passed a CallbackInfoReturnable as a result
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) Mixing client.EditGameRulesScreenAccessor from fabric-game-rule-api-v1.mixins.json into net.minecraft.client.gui.screens.worldselection.EditGameRulesScreen
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-game-rule-api-v1.mixins.json:client.EditGameRulesScreenAccessor: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:dimension_type has been marked as modded, registry entry minecraft:overworld was changed
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/biome has been marked as modded, registry entry minecraft:the_void was changed
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/configured_carver has been marked as modded, registry entry minecraft:cave was changed
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/configured_feature has been marked as modded, registry entry minecraft:seagrass_short was changed
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/placed_feature has been marked as modded, registry entry minecraft:crimson_fungi was changed
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/configured_structure_feature has been marked as modded, registry entry minecraft:pillager_outpost was changed
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/processor_list has been marked as modded, registry entry minecraft:empty was changed
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/template_pool has been marked as modded, registry entry minecraft:empty was changed
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/noise_settings has been marked as modded, registry entry minecraft:overworld was changed
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/noise has been marked as modded, registry entry minecraft:temperature was changed
+[21:44:05] [Render thread/DEBUG] (net.fabricmc.fabric.impl.registry.sync.DynamicRegistrySync) Setting up synchronisation of new BuiltinRegistries entries to the built-in DynamicRegistryManager
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:dimension_type has been marked as modded, registry entry minecraft:overworld was changed
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) Mixing MixinTagManager from fabric-tag-extensions-v0.mixins.json into net.minecraft.tags.TagContainer
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-tag-extensions-v0.mixins.json:MixinTagManager: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-tag-extensions-v0.mixins.json:MixinTagManager->@Inject::init(Ljava/util/Map;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V from mod fabric-tag-extensions-v0 doesn't use it's CallbackInfo
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-tag-extensions-v0.mixins.json:MixinTagManager->@Inject::init(Ljava/util/Map;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V from mod fabric-tag-extensions-v0 has 0 override(s) in child classes
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-tag-extensions-v0.mixins.json:MixinTagManager->@Inject::init(Ljava/util/Map;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V from mod fabric-tag-extensions-v0 won't be passed a CallbackInfo as a result
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/noise_settings has been marked as modded, registry entry minecraft:overworld was changed
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) Mixing MixinRegistryOps from fabric-tag-extensions-v0.mixins.json into net.minecraft.resources.RegistryReadOps
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-tag-extensions-v0.mixins.json:MixinRegistryOps: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) Mixing modification.RegistryOpsMixin from fabric-biome-api-v1.mixins.json into net.minecraft.resources.RegistryReadOps
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-biome-api-v1.mixins.json:modification.RegistryOpsMixin: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-tag-extensions-v0.mixins.json:MixinRegistryOps->@Inject::afterDynamicRegistryLoaded(Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/core/RegistryAccess;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V from mod fabric-tag-extensions-v0 doesn't use it's CallbackInfoReturnable
+[21:44:05] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-biome-api-v1.mixins.json:modification.RegistryOpsMixin->@Inject::afterCreation(Lcom/mojang/serialization/DynamicOps;Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/core/RegistryAccess;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V from mod fabric-biome-api-v1 doesn't use it's CallbackInfoReturnable
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:dimension has been marked as modded, registry entry minecraft:the_nether was changed
+[21:44:05] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:dimension has been marked as modded, registry entry minecraft:overworld was changed
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) Mixing GameRulesAccessor from fabric-game-rule-api-v1.mixins.json into net.minecraft.world.level.GameRules
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-game-rule-api-v1.mixins.json:GameRulesAccessor: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) Renaming @Invoker method callRegister(Ljava/lang/String;Lnet/minecraft/world/level/GameRules$Category;Lnet/minecraft/world/level/GameRules$Type;)Lnet/minecraft/world/level/GameRules$Key; to callRegister_$md$72aee5$0 in fabric-game-rule-api-v1.mixins.json:GameRulesAccessor
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) Renaming @Accessor method getRuleTypes()Ljava/util/Map; to getRuleTypes_$md$72aee5$1 in fabric-game-rule-api-v1.mixins.json:GameRulesAccessor
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) Mixing RuleKeyMixin from fabric-game-rule-api-v1.mixins.json into net.minecraft.world.level.GameRules$Key
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-game-rule-api-v1.mixins.json:RuleKeyMixin: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) Mixing BooleanRuleAccessor from fabric-game-rule-api-v1.mixins.json into net.minecraft.world.level.GameRules$BooleanValue
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-game-rule-api-v1.mixins.json:BooleanRuleAccessor: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) Renaming @Invoker method invokeCreate(ZLjava/util/function/BiConsumer;)Lnet/minecraft/world/level/GameRules$Type; to invokeCreate_$md$72aee5$0 in fabric-game-rule-api-v1.mixins.json:BooleanRuleAccessor
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) Mixing IntRuleAccessor from fabric-game-rule-api-v1.mixins.json into net.minecraft.world.level.GameRules$IntegerValue
+[21:44:06] [Render thread/DEBUG] (FabricLoader/Mixin) fabric-game-rule-api-v1.mixins.json:IntRuleAccessor: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[21:44:06] [Render thread/INFO] (template) This line is printed by an example mod mixin in COMMON package!
+[21:44:06] [Render thread/INFO] (net.minecraft.server.LoggedPrintStream) [STDOUT]: /media/samo/DataDisk/Documents/GitHub/MultiLoaderTemplate/fabric/run/config
+[21:44:06] [Render thread/INFO] (template) This line is printed by an example mod mixin in fabric package!
+[21:44:08] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:dimension_type has been marked as modded, registry entry minecraft:overworld was changed
+[21:44:08] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:worldgen/noise_settings has been marked as modded, registry entry minecraft:overworld was changed
+[21:44:08] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:dimension has been marked as modded, registry entry minecraft:the_nether was changed
+[21:44:08] [Render thread/DEBUG] (FabricRegistrySync) Registry minecraft:dimension has been marked as modded, registry entry minecraft:overworld was changed
+[21:44:09] [Render thread/INFO] (template) This line is printed by an example mod mixin in COMMON package!
+[21:44:09] [Render thread/INFO] (net.minecraft.server.LoggedPrintStream) [STDOUT]: /media/samo/DataDisk/Documents/GitHub/MultiLoaderTemplate/fabric/run/config
+[21:44:09] [Render thread/INFO] (template) This line is printed by an example mod mixin in fabric package!
+[21:44:11] [Render thread/INFO] (net.minecraft.client.Minecraft) Stopping!

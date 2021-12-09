@@ -102,3 +102,10 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 [21:43:01] [Render thread/INFO] (template) This line is printed by an example mod mixin in COMMON package!
 [21:43:01] [Render thread/INFO] (Minecraft) [STDOUT]: /media/samo/DataDisk/Documents/GitHub/MultiLoaderTemplate/fabric/run/config
 [21:43:01] [Render thread/INFO] (template) This line is printed by an example mod mixin in fabric package!
+[21:44:06] [Render thread/INFO] (template) This line is printed by an example mod mixin in COMMON package!
+[21:44:06] [Render thread/INFO] (Minecraft) [STDOUT]: /media/samo/DataDisk/Documents/GitHub/MultiLoaderTemplate/fabric/run/config
+[21:44:06] [Render thread/INFO] (template) This line is printed by an example mod mixin in fabric package!
+[21:44:09] [Render thread/INFO] (template) This line is printed by an example mod mixin in COMMON package!
+[21:44:09] [Render thread/INFO] (Minecraft) [STDOUT]: /media/samo/DataDisk/Documents/GitHub/MultiLoaderTemplate/fabric/run/config
+[21:44:09] [Render thread/INFO] (template) This line is printed by an example mod mixin in fabric package!
+[21:44:11] [Render thread/INFO] (Minecraft) Stopping!
