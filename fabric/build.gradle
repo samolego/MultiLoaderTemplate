@@ -38,10 +38,10 @@ loom {
 
 processResources {
     from project(":common").sourceSets.main.resources
-    inputs.property "version", project.version
+    inputs.property "version", rootProject.version
 
     filesMatching("fabric.mod.json") {
-        expand "version": project.version
+        expand "version": rootProject.version
     }
 }
 
@@ -51,7 +51,7 @@ tasks.withType(JavaCompile) {
 
 jar {
     from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}"}
+        rename { "${it}_${rootProject.archivesBaseName}"}
     }
 }
 

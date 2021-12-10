@@ -12,6 +12,7 @@
     "homepage": "https://samolego.github.io/Template",
     "sources": "https://github.com/samolego/Template"
   },
+  "license": "CC0",
   "environment": "*",
   "entrypoints": {
     "main": [

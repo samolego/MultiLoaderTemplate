@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class SampleMixin {
     @Inject(at = @At("HEAD"), method = "init()V")
     private void init(CallbackInfo info) {
-        Template.LOGGER.info("This line is printed by an example mod mixin in fabric package!");
+        Template.LOGGER.info("This line is printed by an example mod mixin in forge package!");
     }
 }
