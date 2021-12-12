@@ -1,11 +1,11 @@
 modLoader = "javafml"
 loaderVersion = "[37,)"
 issueTrackerURL = "https://github.com/samolego/MultiLoaderTemplate/issues"
-license = "CC0"
+license = "CC0-1.0.0"
 
 [[mods]]
 modId = "template"
-version = "1.0.0"
+version = "${global.version}"
 displayName = "template"
 displayURL="https://github.com/samolego/MultiLoaderTemplate"
 authors = "samo_lego"

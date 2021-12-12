@@ -28,7 +28,9 @@ public abstract class Platform {
      * Gets config directory path.
      * @return config directory path.
      */
-    public abstract Path getConfigDirectory();
+    public Path getConfigDirectory() {
+        return null;
+    };
 
     /**
      * Checks whether player has provided permission.
@@ -36,11 +38,15 @@ public abstract class Platform {
      * @param permission permission to check.
      * @return true if player has permission, false otherwise.
      */
-    public abstract boolean hasPermission(ServerPlayer player, String permission);
+    public boolean hasPermission(ServerPlayer player, String permission) {
+        return false;
+    }
+
 
     public enum Environment {
         FABRIC,
         FORGE,
+        SPONGE,
         UNKNOWN
     }
 }

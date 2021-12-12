@@ -3,8 +3,9 @@ allprojects {
     apply plugin: "maven-publish"
     //apply plugin: "com.github.johnrengelman.shadow"
 
-    //sourceCompatibility = JavaVersion.VERSION_17  // Incompatible with below option java.toolchain
-    //targetCompatibility = JavaVersion.VERSION_17
+
+    // Forge needs this
+    java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
     archivesBaseName = rootProject.mod_name
     version = rootProject.mod_version
@@ -14,7 +15,21 @@ allprojects {
         mavenCentral()
     }
 
-    // Forge needs this
-    java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+    // configure the maven publication
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+            }
+        }
+
+        // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+        repositories {
+            // Add repositories to publish to here.
+            // Notice: This block does NOT have the same function as the block in the top level.
+            // The repositories here will be used for publishing your artifact, not for
+            // retrieving dependencies.
+        }
+    }
 }
 
