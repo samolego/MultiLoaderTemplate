@@ -13,9 +13,6 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
-archivesBaseName = "${rootProject.mod_name}-forge-${rootProject.minecraft_version}"
-
-
 repositories {
 }
 
@@ -40,8 +37,8 @@ minecraft {
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
 
-            arg "-mixin.config=template.mixins.json"
-            arg "-mixin.config=template.forge.mixins.json"
+            arg "-mixin.config=${rootProject.mod_name}.mixins.json"
+            arg "-mixin.config=${rootProject.mod_name}.forge.mixins.json"
 
         }
 
@@ -50,8 +47,8 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
 
-            arg "-mixin.config=template.mixins.json"
-            arg "-mixin.config=template.forge.mixins.json"
+            arg "-mixin.config=${rootProject.mod_name}.mixins.json"
+            arg "-mixin.config=${rootProject.mod_name}.forge.mixins.json"
         }
     }
 }
@@ -98,7 +95,7 @@ jar {
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "",
-                "MixinConfigs"            : "template.mixins.json, template.forge.mixins.json",
+                "MixinConfigs"            : "${rootProject.mod_name}.mixins.json, ${rootProject.mod_name}.forge.mixins.json",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
