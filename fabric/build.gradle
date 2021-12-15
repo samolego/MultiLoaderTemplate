@@ -2,8 +2,6 @@ plugins {
     id 'fabric-loom' version '0.10-SNAPSHOT'
 }
 
-archivesBaseName = "${mod_name}-fabric-${minecraft_version}"
-
 repositories {
 }
 

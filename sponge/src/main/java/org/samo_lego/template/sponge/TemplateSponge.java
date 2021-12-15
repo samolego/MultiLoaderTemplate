@@ -17,6 +17,7 @@ import static org.samo_lego.template.Template.MOD_ID;
 @Plugin(MOD_ID)
 public class TemplateSponge {
 
+    @Inject
     private final PluginContainer container;
 
     @Inject

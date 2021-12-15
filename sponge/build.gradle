@@ -4,14 +4,15 @@ plugins {
     id("org.spongepowered.gradle.vanilla") version "0.2.1-SNAPSHOT"
 }
 
-archivesBaseName = "${rootProject.mod_name}-sponge-${rootProject.minecraft_version}"
-
 repositories {
 }
 
 dependencies {
-    compileOnly("org.spongepowered:spongeapi:8.0.0-SNAPSHOT")
     compileOnly("org.spongepowered:mixin:0.8.3-SNAPSHOT")
+    compileOnly("org.spongepowered:spongeapi:8.0.0-SNAPSHOT")
+
+    // It doesn't want to comply without this
+    testCompileOnly("org.spongepowered:mixin:0.8.3-SNAPSHOT")
 
     compileOnly project(":common")
 }
