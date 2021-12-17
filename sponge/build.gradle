@@ -11,7 +11,7 @@ dependencies {
     compileOnly("org.spongepowered:mixin:0.8.3-SNAPSHOT")
     compileOnly("org.spongepowered:spongeapi:8.0.0-SNAPSHOT")
 
-    // It doesn't want to comply without this
+    // It doesn't want to compile without this
     testCompileOnly("org.spongepowered:mixin:0.8.3-SNAPSHOT")
 
     compileOnly project(":common")
